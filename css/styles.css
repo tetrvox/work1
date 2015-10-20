@@ -1,0 +1,387 @@
+@font-face{
+	font-family: RobotoBlack;
+	src: url(../fonts/Roboto-Black.ttf); 
+
+}
+@font-face{
+	font-family: RobotoBold;
+	src: url(../fonts/Roboto-Bold.ttf); 
+
+}
+@font-face{
+	font-family: RobotoLight;
+	src: url(../fonts/Roboto-Light.ttf); 
+
+}
+@font-face{
+	font-family: RobotoRegular;
+	src: url(../fonts/Roboto-Regular.ttf); 
+
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font: 40px RobotoBlack;
+	padding: 10px 0 40px;
+}
+h2{
+	font: 40px RobotoBlack;
+	margin: 10px 0 30px;
+}
+
+html {
+	background: url("../images/layout/bg-repeat.jpg") repeat;
+}
+
+
+#wrapper{
+	width: 1140px;
+	margin: 0px auto 0;
+	background: url("../images/layout/lightning.png") no-repeat;
+
+}
+
+#header{
+	width: 1118px;
+	padding: 55px 0 0 22px;
+	height: 95px;
+
+}
+
+
+#logo{
+	height: 65px;
+	width: 320px;
+	float: left;
+	text-indent: -9000px;
+	background: url("../images/layout/logo.png") no-repeat;
+	margin-left: -8px;
+}
+
+#logo a{
+	display: block;
+}
+
+
+#logo:hover{
+	opacity: 0.5;
+}
+
+.main-navigation{
+	margin: 15px 0 0 0;
+	padding-left: 90px;
+	float: left;
+}
+
+
+
+.main-navigation li a:hover:before{
+	width: 6px;
+	height: 42px;
+	content: '';
+	position: absolute;
+	margin-left: -24px;
+	top: 0;
+	background: url("../images/layout/menu-left.png") no-repeat 0 0;
+}
+
+.main-navigation li .active{
+	/*background-color: red;	*/
+}
+
+
+.main-navigation li a:hover:after {
+	width: 6px;
+	height: 42px;
+	content: '';
+	position: absolute;
+	margin-left: 20px;
+	top: 0px;
+	background: url("../images/layout/menu-right.png") no-repeat 0 0;
+}
+
+.main-navigation li{
+	list-style: outside none;
+	float: left;
+	height: 30px;
+	border-right: 1px #0c3559 solid;
+	position: relative;
+}
+
+.main-navigation li:nth-last-child(1){
+	border: none;
+}
+
+.main-navigation li a:hover{
+	background: url("../images/layout/menu-repeat.png") repeat-x;
+	height: 42px;
+}
+
+
+.main-navigation li a{
+	text-transform: capitalize;
+	color: #fff;
+	text-decoration: none;
+	font: 15px RobotoRegular;
+	position: relative;	
+	padding: 5px 20px 0;
+	display: block;
+
+}
+
+
+
+
+.content:before{
+	content: "";
+	background-image: url("../images/layout/round-corners.png");
+	height: 4px;
+	width: 1140px;
+	position: absolute;
+	top: -4px;
+	left: 0;
+}
+
+
+.content{
+	background-color: #fff;
+	padding: 60px 30px 0;
+	color: #6b819a;
+	position: relative;
+	font: 24px RobotoLight;
+}
+
+.content h1{
+	color: #184771;
+	text-align: center;
+}
+
+.about{
+	color: #184771;
+	font-size: 24px;
+	padding-bottom: 40px; 
+	line-height: 35px;
+
+}
+
+.graph_box{
+	padding: 40px 0px 0px 0px;
+	min-height: 300px;
+	margin: 0 0 55px 0;
+	border-top: 1px solid #f0f0f0;
+	overflow: hidden;
+
+}
+
+
+
+.menu_box{
+	width: 190px;
+	height: 280px;
+	border: 1px #dbdbdb solid;
+	float: left;
+	margin: 10px 11px 50px;
+}
+
+
+
+.menu_box .menu_title {
+	font: 18px RobotoBold;
+	color: #3c6e9a;
+	padding: 5px;
+	text-align: center;
+	height: 80px;
+	width: 180px;
+	background: #fff url("../images/layout/service-menu-bg.jpg") repeat-x;
+	overflow: hidden;
+	/*display: table-cell;
+	vertical-align: middle;*/
+}
+
+.menu_box .menu_title h3{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.menu_box .menu_picture img{
+	max-width: 60px;
+	max-height: 60px;
+}
+
+.menu_box .menu_picture{
+	width: 190px;
+	height: 110px;
+	border-top: 1px #dbdbdb solid;
+	border-bottom: 1px #dbdbdb solid;
+ 	display: table-cell;
+ 	vertical-align: middle;
+ 	overflow: hidden;
+ 	text-align: center;
+
+}
+
+.menu_box .menu_button{	
+	background-color: #ebf2f7;
+	text-align: center;
+	padding: 20px;
+	height: 40px;
+
+}
+
+.menu_box .menu_button a:before{
+	background-image: url("../images/layout/button-left.png");
+	height: 42px;
+	width: 4px;
+	position: absolute;
+	content: "";
+	top: 0px;
+	left: -4px;
+}
+
+
+
+.menu_box .menu_button a{
+	display: inline-block;
+	font: 17px RobotoBlack;
+	text-decoration: none;
+	color: #fff;
+	position: relative;
+	padding: 10px 20px 0;
+	height: 32px;
+	background: #649acc url("../images/layout/button-center.png") repeat-x;
+	overflow: hidden;
+	max-height: 32px;
+	max-width: 120px;
+} 
+
+
+.menu_box .menu_button a:after{
+	background-image: url("../images/layout/button-right.png");
+	height: 42px;
+	width: 4px;
+	position: absolute;
+	content: "";
+	top: -17px;
+	margin: 17px;
+}
+
+
+
+.services{
+	clear: both;
+	font: 19px Robotolight;
+	line-height: 36px;
+	background-color: #f3f7f9;
+	padding: 45px 30px 60px 30px;
+	margin: 0 -30px;
+	position: relative;
+	
+}
+
+.services:before{
+	width: 1140px;
+	height: 20px;
+	background-image: url("../images/layout/gradient.jpg");
+	content: "";
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+
+
+.services h2{
+	color: #17466f;
+	text-align: center;
+
+}
+
+.content:after{
+	width: 1140px;
+	height: 8px;
+	background-image: url("../images/layout/shadow.png");
+	content: "";
+	position: absolute;
+	left: 0px;
+}
+
+
+
+
+#footer{
+	height: 170px;
+	padding: 25px 20px;
+	width: 100%;
+	background: url("../images/layout/lightning.png") no-repeat;
+	background-position: 0px -330px, center;
+	z-index: 0;
+
+
+}
+
+.copyright{
+	float: left;
+	color: #f3f7f9;
+	font: 13px RobotoRegular;
+}
+
+.social:before{
+	content: "";
+	width: 25px;
+	height: 19px;
+	background-image: url("../images/layout/twitter-logo.png");
+	position: absolute;
+	margin: 0px -30px 0;
+
+}
+
+
+.social{
+	float: left;
+	margin-left: 40px;
+}
+
+.social a{
+	text-decoration: none;
+	color: #649acc;
+	position: relative;
+	font: 13px RobotoRegular;
+	display: inline-block;
+
+}
+
+.secondary-navigation{
+	margin-left: 130px;
+	float: left;
+}
+
+
+.secondary-navigation li{
+	list-style: none;
+	float: left;
+	font: 13px RobotoNormal;
+	text-transform: capitalize;
+	border-right: 1px #91afc9 solid;
+
+}
+
+.secondary-navigation li a{
+	color: #91afc9;
+	text-decoration: none;
+	padding: 0 10px 0;
+	font: 13px RobotoRegular;
+}
+
+.secondary-navigation li a:hover{
+	text-decoration: underline;
+}
+
+
+.secondary-navigation li:nth-last-child(1){
+	border: none;
+}
